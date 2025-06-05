@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PerFit</title>
+
+    <!-- Styles and Icons -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css?v=1.1" />
+    <link rel="icon" href="./css/PerFitLogoGear.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="main-bg">
+
+<!-- Navigation Bar -->
+<nav id="navbar" class="navbar">
+    <div class="navbar-left">
+        <!-- Logo and navigation links -->
+        <img src="./css/PerFitLogo.png" alt="PerFit Logo" class="logo-img">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#use-cases">Use Cases</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</nav>
+
+<!-- Hero / Welcome Section -->
+<section id="home" class="welcome">
+    <div class="welcome-content">
+        <h1 class="welcome-title">ALL YOU NEED IS <span class="highlight">FITNESS</span></h1>
+        <p class="welcome-subtext">Personalized programs for athletes, trainers, and nutritionists.</p>
+        <p class="welcome-subtext">Develop your skills and achieve your goals!</p>
+
+        <!-- CTA Buttons -->
+        <div class="welcome-buttons">
+            <a href="#services"><button class="btn primary">Explore</button></a>
+            <a href="./signup.jsp"><button class="btn secondary">Join Now</button></a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section services-section light-bg">
+    <h2 class="section-title">TAILORED FITNESS & PERFORMANCE</h2>
+    <p class="section-description">
+        Training and nutrition programs customized for every professional and athlete. Improve your abilities with expert guidance!
+    </p>
+
+    <!-- Icon-based services overview -->
+    <div class="icon-grid">
+        <div class="icon-card"><i class="fas fa-bullseye"></i><p>Goal Setting</p></div>
+        <div class="icon-card"><i class="fas fa-dumbbell"></i><p>Strength Training</p></div>
+        <div class="icon-card"><i class="fas fa-heartbeat"></i><p>Cardio</p></div>
+        <div class="icon-card"><i class="fas fa-running"></i><p>Endurance</p></div>
+        <div class="icon-card"><i class="fas fa-yin-yang"></i><p>Flexibility</p></div>
+        <div class="icon-card"><i class="fas fa-utensils"></i><p>Nutrition</p></div>
+    </div>
+</section>
+
+<!-- Use Cases Section -->
+<section id="use-cases" class="section dark-bg text-center">
+    <h2 class="section-title">Use Cases</h2>
+
+    <!-- Cards representing different user roles -->
+    <div class="card-grid">
+        <div class="card">
+            <i class="fas fa-running"></i>
+            <h3>Athletes</h3>
+            <p>Track progress and receive training programs.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-user-tie"></i>
+            <h3>Trainers</h3>
+            <p>Create and adapt personalized workout programs.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-apple-alt"></i>
+            <h3>Nutritionists</h3>
+            <p>Design personalized meal plans based on individual goals.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section light-bg text-center">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-description">
+        A team of training, nutritionists and tech experts aiming to deliver the best personalized fitness programs.
+    </p>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="section dark-bg text-left">
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+
+    <!-- List of FAQs -->
+    <div class="faq">
+        <div class="faq-item">
+            <h3>What is a personalized workout program?</h3>
+            <p>A program based on your fitness goals and physical condition.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I get started?</h3>
+            <p>Sign up and follow the setup steps.</p>
+        </div>
+        <div class="faq-item">
+    		<h3>Is PerFit suitable for beginners?</h3>
+    		<p>Absolutely. PerFit is designed to adapt to all levels—from beginners to elite athletes. Our setup process tailors your program based on your experience.</p>
+		</div>
+		<div class="faq-item">
+    		<h3>What types of training are supported?</h3>
+    		<p>We offer strength, cardio, mobility, endurance, and sport-specific training, each fully personalized.</p>
+		</div>
+        <div class="faq-item">
+            <h3>Can I change my program?</h3>
+            <p>Yes, you can change it anytime from your profile.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Is there support available?</h3>
+            <p>Yes, our team is here to help you anytime.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I need equipment?</h3>
+            <p>Some programs may require basic equipment (e.g. resistance bands or dumbbells).</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section light-bg text-center">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-description">Have questions? Get in touch with us!</p>
+
+    <!-- Simple contact form -->
+    <form class="contact-form" action="ContactFormServlet" method="post">
+    	<input type="text" name="name" placeholder="Your Name" class="form-control" required>
+    	<input type="email" name="email" placeholder="Your Email" class="form-control" required>
+    	<textarea name="message" placeholder="Your Message" class="form-control" required></textarea>
+    	<button type="submit" class="btn primary">Send Message</button>
+	</form>
+</section>
+
+<!-- Scroll-hide Navbar Script -->
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+
+<script>
+    // Get query parameter by name
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // If a message exists, show it below the form
+    const msg = getQueryParam("msg");
+    if (msg) {
+        const form = document.querySelector(".contact-form");
+        const messageBox = document.createElement("div");
+        messageBox.textContent = decodeURIComponent(msg);
+        messageBox.style.marginTop = "10px";
+        messageBox.style.fontWeight = "bold";
+        messageBox.style.fontSize = "14px";
+        messageBox.style.color = msg.toLowerCase().includes("success") ? "#22c55e" : "#ef4444";
+        form.appendChild(messageBox);
+    }
+</script>
+
+
+<!-- Footer -->
+<footer>
+    <center><p>&copy; 2025 PerFit. All rights reserved.</p></center>
+</footer>
+
+
+</body>
+</html>

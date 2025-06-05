@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+/* ====== RESET STYLES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====== GLOBAL PAGE STYLES ====== */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(50,10,80,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ====== FORM CONTAINER ====== */
+.login-form, .container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(175, 105, 238, 0.6);
+    text-align: center;
+    width: 380px;
+    color: white;
+}
+
+/* ====== HEADINGS ====== */
+.login-form h2, .container h2 {
+    color: #AF69EE;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ====== INPUT GROUPS ====== */
+.form-group, .container form div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* ====== INPUT FIELDS ====== */
+.form-group input,
+.form-group select,
+.container input[type="text"],
+.login-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Space for eye icon */
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+/* Focus effects for inputs */
+.form-group input:focus,
+.form-group select:focus,
+.container input[type="text"]:focus {
+    box-shadow: 0 0 10px #AF69EE;
+    border: 1px solid #AF69EE;
+}
+
+/* Dropdown appearance */
+.form-group select {
+    appearance: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.form-group select:valid {
+    color: white;
+}
+
+/* ====== PASSWORD FIELD STYLING ====== */
+.password-field-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Container for eye icon */
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+/* Eye icon styling */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    z-index: 10;
+}
+
+/* Space for icon */
+.form-control {
+    padding-right: 40px;
+}
+
+/* ====== PASSWORD RULES LIST ====== */
+.password-rules {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.password-rules li {
+    margin: 5px 0;
+}
+
+.password-rules .valid {
+    color: #22c55e;
+}
+
+.password-rules .invalid {
+    color: #f87171;
+}
+
+/* ====== BUTTON STYLES ====== */
+.btn-primary, .container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #AF69EE, #6F2DA8);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-primary:hover, .container button:hover {
+    box-shadow: 0 0 15px rgba(175, 105, 238, 0.8);
+    transform: scale(1.05);
+}
+
+/* Secondary button (e.g. OTP resend) */
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background: #444;
+    color: white;
+}
+
+/* ====== LINK STYLING ====== */
+.text-center a {
+    color: #AF69EE;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+/* ====== BACK TO HOME BUTTON ====== */
+.back-to-home {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #AF69EE, #6F2DA8);
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(175, 105, 238, 0.8), 0 0 20px rgba(111, 45, 168, 0.8);
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-to-home:hover {
+    box-shadow: 0 0 25px rgba(175, 105, 238, 1), 0 0 30px rgba(111, 45, 168, 1);
+    transform: scale(1.1);
+}
+
+/* ====== MESSAGES ====== */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.info-message {
+    color: lightgreen;
+    margin-bottom: 15px;
+}
+
+.alert-message {
+    background-color: #f87171;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(248, 113, 113, 0.6);
+    text-align: center;
+}
+
+/* ====== OTP FORM BUTTON GROUP ====== */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button-group .btn-primary,
+.button-group .btn-secondary {
+    flex: 1;
+    margin-top: 0;
+}
+
+/* ====== DISABLED BUTTON ====== */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}

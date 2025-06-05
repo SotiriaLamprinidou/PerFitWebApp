@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+/* ------------------ Section: Header Styling ------------------ */
+
+/* Section header layout and spacing */
+.programs header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+/* Main header title */
+.programs header h2 {
+    font-size: 32px;
+    color: #AF69EE;
+    margin-bottom: 10px;
+}
+
+/* Subtext description under header */
+.programs header p {
+    color: #ccc;
+}
+
+/* ------------------ Section: Form Container ------------------ */
+
+/* Container for the main form block */
+.program-form {
+    background-color: #1e1e2f;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(175, 105, 238, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Each input label and field group */
+.form-group {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustment (redundant in this case but can be expanded) */
+@media (min-width: 768px) {
+    .form-group {
+        flex: 1 1 100%;
+    }
+}
+
+/* Label style */
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Input and select field appearance */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a3f;
+    color: #eee;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* ------------------ Section: Submit Button ------------------ */
+
+/* Submit button styling */
+.program-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #AF69EE;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.program-form button:hover {
+    background-color: #9a52da;
+}
+
+/* ------------------ Section: Program Result Display ------------------ */
+
+/* Box showing generated content */
+.program-result {
+    background-color: #1e1e2f;
+    padding: 30px;
+    margin: 50px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(175, 105, 238, 0.4);
+    max-width: 900px;
+    color: #ccc;
+}
+
+/* Result section title */
+.program-result h3 {
+    color: #AF69EE;
+    margin-bottom: 15px;
+}
+
+/* Format generated program as preformatted code */
+.program-result pre {
+    white-space: pre-line;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+/* ------------------ Section: Program Card ------------------ */
+
+.program-card {
+    background-color: #1e1e2f;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(175, 105, 238, 0.25);
+    color: #eee;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.program-card:hover {
+    transform: translateY(-3px);
+}
+
+.program-header {
+    border-bottom: 1px solid #AF69EE;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.program-header h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #AF69EE;
+    margin-bottom: 8px;
+}
+
+.program-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    color: #ccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+.program-meta strong {
+    color: #AF69EE;
+}
+
+.program-content pre {
+    background: none;
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-form textarea {
+    width: 95%;
+    min-height: 250px;
+    padding: 16px;
+    background-color: #2a2a3f;
+    color: #eee;
+    border: 1px solid #AF69EE;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+/* ------------------ Section: Actions ------------------ */
+
+.program-actions {
+    margin-top: 20px;
+}
+
+.program-actions button {
+    padding: 10px 22px;
+    background-color: #AF69EE;
+    color: #111;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.program-actions button:hover {
+    background-color: #9a52da;
+}
+
+/* ------------------ Section: Page Header ------------------ */
+
+.page-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.page-header .highlight {
+    color: #AF69EE;
+}
+
+.page-header p {
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* ------------------ Section: Wrapper ------------------ */
+
+.progress-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* ------------------ Section: Stat Boxes ------------------ */
+
+.stat-box {
+    background-color: #1e1e2f;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(32, 224, 192, 0.2);
+    color: #eee;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-2px);
+}
+
+.stat-box h3 {
+    font-size: 18px;
+    color: #AF69EE;
+    margin-bottom: 8px;
+}
+
+.stat-box p {
+    color: #ccc;
+}
+
+.stat-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .stat-box-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .stat-box {
+        flex: 1;
+    }
+}
+
+/* ------------------ Section: Tooltip ------------------ */
+
+.tracker {
+    position: relative;
+}
+
+.tooltip {
+    display: block;
+    position: absolute;
+    bottom: 75%;
+    left: 95%;
+    transform: translateX(-50%) translateY(-10px);
+    background: #2a2a3f;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tracker:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* ------------------ Section: Logging Form ------------------ */
+
+.log-box {
+    background-color: #1e1e2f;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(32, 224, 192, 0.2);
+    color: #eee;
+}
+
+.log-box h2 {
+    color: #AF69EE;
+    margin-bottom: 20px;
+}
+
+.log-box .form-group {
+    margin-bottom: 20px;
+}
+
+.log-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.log-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a3f;
+    color: #eee;
+    font-size: 14px;
+}
+
+.log-box button {
+    padding: 12px 24px;
+    background-color: #AF69EE;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.log-box button:hover {
+    background-color: #17bca5;
+}
+
+/* ------------------ Section: Meal Plan Display ------------------ */
+
+.mealplan-display {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.mealplan-display .mealplan-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
+    max-width: 100%;
+}
+
+.mealplan-display .meta-left,
+.mealplan-display .meta-right {
+    flex: 1 1 45%;
+}
+
+.mealplan-display .meta-left p,
+.mealplan-display .meta-right p {
+    margin: 6px 0;
+}
+
+.mealplan-divider {
+    border: none;
+    height: 1px;
+    background: #AF69EE;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* ------------------ Section: Meal Card ------------------ */
+
+.meal-card {
+    background-color: #1e1e2f;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(175, 105, 238, 0.25);
+    color: #eee;
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+
+.meal-card:hover {
+    transform: translateY(-3px);
+}
+
+.meal-card .program-header h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #AF69EE;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #AF69EE;
+    padding-bottom: 10px;
+}
+
+.meal-card .mealplan-display {
+    margin-top: 20px;
+}
+
+.meal-card .mealplan-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ccc;
+    max-width: 100%;
+}
+
+.meal-card .meta-left,
+.meal-card .meta-right {
+    flex: 1 1 45%;
+}
+
+.meal-card .meta-left p,
+.meal-card .meta-right p {
+    margin: 6px 0;
+}
+
+.meal-card .mealplan-divider {
+    border: none;
+    height: 1px;
+    background: #AF69EE;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.meal-card pre {
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+.meal-card .program-header {
+    border-bottom: none;
+}

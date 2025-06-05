@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+
+    <!-- External Stylesheets and Icons -->
+    <link rel="stylesheet" type="text/css" href="./css/login.css?v=1.1" />
+    <link rel="icon" type="image/x-icon" href="./css/PerFitLogoGear.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Login Form Container -->
+    <div class="login-form">
+        <!-- Login Form -->
+        <form action="LoginUserServlet" method="post" autocomplete="off">
+            <h2>Login</h2>
+
+            <!-- Hidden alert box for login errors (e.g., invalid credentials) -->
+            <div id="alertBox" class="alert-message" style="display:none;"></div>
+            
+            <!-- Username Field -->
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required name="username">
+            </div>
+
+            <!-- Password Field with toggle visibility button -->
+            <div class="form-group">
+                <input type="password" id="login-password" class="form-control" placeholder="Password" required name="password">
+                <button type="button" class="password-toggle" onclick="togglePassword('login-password', this)">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </div>
+
+            <!-- Redirect link to signup page -->
+            <p class="text-center"><a href="./signup.jsp">Create an Account</a></p>
+        </form>
+    </div>
+
+    <!-- Back to Home Button (Unicode arrow icon) -->
+    <a href="index.html" class="back-to-home" title="Back to home">&#129144;</a>
+
+    <!-- JavaScript for password visibility toggle and error alert -->
+    <script>
+        // Toggle password visibility
+        function togglePassword(inputId, btn) {
+            const input = document.getElementById(inputId);
+            const icon = btn.querySelector("i");
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.replace("fa-eye", "fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.replace("fa-eye-slash", "fa-eye");
+            }
+        }
+
+        // Show error alert box if "error" exists in URL query string
+        window.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const error = params.get("error");
+            if (error) {
+                const box = document.getElementById("alertBox");
+                box.textContent = decodeURIComponent(error);
+                box.style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+</html>

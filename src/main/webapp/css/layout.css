@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* ====== BASE STYLES ====== */
+
+/* Global body styles: font, background, text color */
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(50,10,80,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+
+/* ====== NAVBAR ====== */
+
+/* Navbar container */
+nav.navbar {
+    background-color: #1b1b2f;
+    border-bottom: 2px solid #AF69EE;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(175, 105, 238, 0.2);
+}
+
+/* Logo image inside navbar */
+nav .admin-logo {
+    height: 50px;
+}
+
+/* Navigation link list */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* Individual nav link styling */
+.nav-links li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #AF69EE;
+}
+
+
+/* ====== HERO SECTION ====== */
+
+/* Full-width header/hero section */
+header {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+/* Hero title */
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #AF69EE;
+}
+
+/* Hero subtitle */
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+
+/* ====== FOOTER ====== */
+
+/* Footer section styles */
+footer {
+    background-color: #1b1b2f;
+    border-top: 2px solid #AF69EE;
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+
+/* ====== FEATURE CARDS ====== */
+
+/* Card container layout */
+.card-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual card styling */
+.card {
+    background-color: #1e1e2f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(175, 105, 238, 0.4);
+    color: #ddd;
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50px; /* Adjust based on content height */
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #AF69EE;
+    margin-bottom: 20px;
+}
+
+/* Icon inside title */
+.card-title i {
+    margin-right: 10px;
+}
+
+/* Card link/button */
+.card a {
+    align-self: flex-start;
+    margin-top: auto;
+    background-color: #AF69EE;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* Ensure cards appear side-by-side on medium+ screens */
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row;
+    }
+}
