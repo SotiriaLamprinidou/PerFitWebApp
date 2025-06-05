@@ -27,6 +27,20 @@ PerFit is a web-based fitness platform tailored to provide personalized workout 
 | Email       | SMTP via Gmail                       |
 | Build Tool  | Maven                                |
 
+---
+
+## 🧩 API Integrations
+
+- ExerciseDB API (via RapidAPI)
+  Used to retrieve structured data on exercises, including body parts, equipment, and instructions — based on selected goals and user constraints (e.g., injuries, bodyweight vs. weights).
+
+- Spoonacular API  
+  Used to fetch recipes based on dietary preferences, allergens, calorie targets, and cuisine types — for personalized nutrition plans.
+
+> These APIs were used under the terms provided by their respective platforms.
+
+----
+
 ## 🧠 System Algorithms Overview
 
 ### 🏃 Athlete Algorithm
