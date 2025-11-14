@@ -1,3 +1,30 @@
+# Ignore sensitive config file
 src/main/resources/config.properties
-/build/
-/target/
+
+# Maven build directories
+target/
+build/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Eclipse project files
+.settings/
+.project
+.classpath
+s
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary / cache files
+*.tmp
+*.cache
+
+# War / jar files (build artifacts)
+*.war
+*.jar

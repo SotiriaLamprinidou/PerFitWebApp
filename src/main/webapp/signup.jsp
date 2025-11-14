@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin Form</title>
+    <title>Signup Form</title>
 
     <!-- Main CSS for styling the form -->
     <link rel="stylesheet" href="./css/login.css?v=1.2">
@@ -20,7 +20,7 @@
 <div class="login-form">
     <!-- Form for account registration -->
     <form action="SigninUserServlet" method="post">
-        <h2>Sign in</h2>
+        <h2>Sign up</h2>
         
         <!-- Alert box for error or success messages -->
         <div id="alertBox" class="alert-message" style="display:none;"></div>
@@ -81,7 +81,7 @@
 
         <!-- Submit button (disabled by default until valid password) -->
         <div class="form-group">
-            <button type="submit" class="btn btn-primary" id="submit-btn">Sign in</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Sign up</button>
         </div>
 
         <!-- Navigation link for existing users -->
